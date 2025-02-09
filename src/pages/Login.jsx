@@ -215,8 +215,8 @@ function Login({ onLogin }) { // Accept onLogin function from App.js
   onClick={() => {
     console.log("Admin login clicked");
     localStorage.setItem('token', 'admin_token'); // Store a dummy token
-    navigate('/AdminDashboard');
-    window.location.reload(); // Force reload to update state in App.js
+    navigate('/AdminDashboard/add-certificate');
+    // window.location.reload();/ // Force reload to update state in App.js
   }}
 >
   Admin Login Here

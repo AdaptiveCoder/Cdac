@@ -109,6 +109,8 @@
 // export default App;
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import AddCertificate from './Components/AddCertificate';
+import ViewCertificate from './Components/ViewCertificate';
 import Navbar from './Components/NavBar';
 import LandingPage from './pages/LandingPage';
 import AboutUs from './pages/AboutUs';
@@ -154,6 +156,7 @@ function App() {
   path="/AdminDashboard/*"  // Add "/*" to allow nested routes
   element={isAuthenticated ? <AdminDashboard handleLogout={handleLogout} /> : <Navigate to="/login" />} 
 />
+{/* <Route path="/AddCertificate" element={<AddCertificate />} /> */}
 
 
 
